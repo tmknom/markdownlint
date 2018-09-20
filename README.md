@@ -1,4 +1,4 @@
-# docker-markdownlint
+# markdownlint-cli
 
 Lint tool for Markdown based on Docker.
 
