@@ -28,7 +28,7 @@ docker run --rm \
 
 ```shell
 git clone git@github.com:tmknom/markdownlint-cli.git && cd markdownlint-cli
-make lint MD_PATH=/path/to/markdown/dir
+make lint MD_PATH=<markdown_dir>
 ```
 
 ## License
