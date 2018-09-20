@@ -11,7 +11,7 @@ lint: ## lint markdown
 	docker run --rm \
 		-v $(DIR_NAME):/work \
 		-w /work \
-		tmknom/docker-markdownlint:1.0.0 \
+		tmknom/markdownlint-cli:1.0.0 \
 		markdownlint .
 
 
