@@ -11,4 +11,4 @@ RUN set -x && \
 
 WORKDIR /work
 ENTRYPOINT ["/usr/bin/markdownlint"]
-CMD ["--help"]
+CMD ["."]
