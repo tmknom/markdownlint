@@ -7,7 +7,7 @@ and [markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli) wrappe
 
 ## Requirements
 
-- docker
+- [Docker](https://www.docker.com/)
 
 ## Usage
 
@@ -34,6 +34,7 @@ docker run -i --rm tmknom/markdownlint-cli -h
 ```text
 build                          Build docker
 help                           Show help
+install                        Install requirements
 lint                           Lint dockerfile and markdown
 lint_dockerfile                Lint dockerfile
 lint_markdown                  Lint markdown
@@ -46,6 +47,7 @@ lint_markdown                  Lint markdown
 ```shell
 git clone git@github.com:tmknom/markdownlint-cli.git
 cd markdownlint-cli
+make install
 ```
 
 ### Deployment
@@ -54,7 +56,7 @@ Automatically deployed by "[DockerHub Automated Build](https://docs.docker.com/d
 
 ### Registry
 
-https://hub.docker.com/r/tmknom/markdownlint-cli/
+<https://hub.docker.com/r/tmknom/markdownlint-cli/>
 
 ## License
 
