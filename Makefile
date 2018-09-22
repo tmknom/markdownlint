@@ -4,6 +4,8 @@
 .PHONY: $(shell grep -E '^[a-zA-Z_-]+:' $(MAKEFILE_LIST) | sed 's/://')
 
 
+lint: lint_dockerfile lint_markdown ## lint dockerfile and markdown
+
 lint_markdown: ## lint markdown
 	docker run --rm -i -v $(CURDIR):/work tmknom/markdownlint-cli
 
