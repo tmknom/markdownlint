@@ -56,7 +56,7 @@ Automatically deployed by "[DockerHub Automated Build](https://docs.docker.com/d
 
 ### Registry
 
-https://hub.docker.com/r/tmknom/markdownlint-cli/
+<https://hub.docker.com/r/tmknom/markdownlint-cli/>
 
 ## License
 
