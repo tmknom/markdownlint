@@ -7,7 +7,7 @@ and [markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli) wrappe
 
 ## Requirements
 
-- docker
+- [Docker](https://www.docker.com/)
 
 ## Usage
 
