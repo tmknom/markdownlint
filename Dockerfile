@@ -9,5 +9,6 @@ RUN set -x && \
     npm cache clean --force && \
     apk del nodejs-npm
 
+WORKDIR /work
 ENTRYPOINT ["/usr/bin/markdownlint"]
 CMD ["--help"]
