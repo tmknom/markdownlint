@@ -1,4 +1,4 @@
-# markdownlint-cli
+# markdownlint
 
 Lint tool for Markdown based on Docker.
 
@@ -13,19 +13,19 @@ This is [markdownlint](https://github.com/DavidAnson/markdownlint) and [markdown
 ### Lint markdown file under the specified directory
 
 ```shell
-docker run -i --rm -v <markdown_dir>:/work tmknom/markdownlint-cli
+docker run -i --rm -v <markdown_dir>:/work tmknom/markdownlint
 ```
 
 ### Lint specified markdown file
 
 ```shell
-docker run -i --rm tmknom/markdownlint-cli -s < <markdown_file>
+docker run -i --rm tmknom/markdownlint -s < <markdown_file>
 ```
 
 ### Help
 
 ```shell
-docker run -i --rm tmknom/markdownlint-cli -h
+docker run -i --rm tmknom/markdownlint -h
 ```
 
 ## Makefile targets
@@ -44,8 +44,8 @@ lint_markdown                  Lint markdown
 ### Installation
 
 ```shell
-git clone git@github.com:tmknom/markdownlint-cli.git
-cd markdownlint-cli
+git clone git@github.com:tmknom/markdownlint.git
+cd markdownlint
 make install
 ```
 
@@ -55,7 +55,7 @@ Automatically deployed by "[DockerHub Automated Build](https://docs.docker.com/d
 
 ### Registry
 
-<https://hub.docker.com/r/tmknom/markdownlint-cli/>
+<https://hub.docker.com/r/tmknom/markdownlint/>
 
 ## License
 
