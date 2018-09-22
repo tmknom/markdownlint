@@ -7,18 +7,18 @@
 lint: lint_dockerfile lint_markdown ## Lint dockerfile and markdown
 
 lint_markdown: ## Lint markdown
-	docker run --rm -i -v $(CURDIR):/work tmknom/markdownlint-cli
+	docker run --rm -i -v $(CURDIR):/work tmknom/markdownlint
 
 lint_dockerfile: ## Lint dockerfile
 	docker run --rm -i hadolint/hadolint < Dockerfile
 
 build: ## Build docker
-	docker build -t tmknom/markdownlint-cli .
+	docker build -t tmknom/markdownlint .
 
 install: ## Install requirements
 	@type docker >/dev/null 2>&1 || (echo "ERROR: docker not found (brew install docker)"; exit 1)
 	docker pull hadolint/hadolint
-	docker pull tmknom/markdownlint-cli
+	docker pull tmknom/markdownlint
 
 # https://postd.cc/auto-documented-makefile/
 help: ## Show help
