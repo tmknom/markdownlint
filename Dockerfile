@@ -7,4 +7,5 @@ RUN set -x && \
     apk del nodejs-npm && \
     rm -rf /var/lib/apt/lists/*
 
-CMD ["/bin/sh"]
+ENTRYPOINT ["/usr/bin/markdownlint"]
+CMD ["--help"]
