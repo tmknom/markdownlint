@@ -4,17 +4,17 @@
 .PHONY: $(shell grep -E '^[a-zA-Z_-]+:' $(MAKEFILE_LIST) | sed 's/://')
 
 
-lint: lint_dockerfile lint_markdown ## lint dockerfile and markdown
+lint: lint_dockerfile lint_markdown ## Lint dockerfile and markdown
 
-lint_markdown: ## lint markdown
+lint_markdown: ## Lint markdown
 	docker run --rm -i -v $(CURDIR):/work tmknom/markdownlint-cli
 
-lint_dockerfile: ## lint dockerfile
+lint_dockerfile: ## Lint dockerfile
 	docker run --rm -i hadolint/hadolint < Dockerfile
 
-build: ## build docker
+build: ## Build docker
 	docker build -t tmknom/markdownlint-cli .
 
 # https://postd.cc/auto-documented-makefile/
-help: ## show help
+help: ## Show help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
