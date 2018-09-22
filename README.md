@@ -39,6 +39,23 @@ lint_dockerfile                Lint dockerfile
 lint_markdown                  Lint markdown
 ```
 
+## Development
+
+### Installation
+
+```shell
+git clone git@github.com:tmknom/markdownlint-cli.git
+cd markdownlint-cli
+```
+
+### Deployment
+
+Automatically deployed by "[DockerHub Automated Build](https://docs.docker.com/docker-hub/builds/)" after merge.
+
+### Registry
+
+https://hub.docker.com/r/tmknom/markdownlint-cli/
+
 ## License
 
 Apache 2 Licensed. See LICENSE for full details.
