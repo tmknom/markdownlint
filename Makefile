@@ -12,6 +12,8 @@ lint_markdown: ## lint markdown
 lint_dockerfile: ## lint dockerfile
 	docker run --rm -i hadolint/hadolint < Dockerfile
 
+build: ## build docker
+	docker build -t tmknom/markdownlint-cli .
 
 # https://postd.cc/auto-documented-makefile/
 help: ## show help
