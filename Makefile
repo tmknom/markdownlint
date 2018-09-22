@@ -8,11 +8,7 @@ MD_PATH = "/path/to/markdown/dir"
 
 lint: ## lint markdown
 	$(eval DIR_NAME := $(shell echo $(shell cd ${MD_PATH} && pwd)))
-	docker run --rm \
-		-v $(DIR_NAME):/work \
-		-w /work \
-		tmknom/markdownlint-cli:1.0.0 \
-		markdownlint .
+	docker run -i --rm -v $(DIR_NAME):/work tmknom/markdownlint-cli
 
 
 # https://postd.cc/auto-documented-makefile/
