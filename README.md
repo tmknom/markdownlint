@@ -47,6 +47,7 @@ lint_markdown                  Lint markdown
 ```shell
 git clone git@github.com:tmknom/markdownlint-cli.git
 cd markdownlint-cli
+make install
 ```
 
 ### Deployment
