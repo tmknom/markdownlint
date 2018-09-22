@@ -2,8 +2,7 @@
 
 Lint tool for Markdown based on Docker.
 
-This is [markdownlint](https://github.com/DavidAnson/markdownlint)
-and [markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli) wrapper.
+This is [markdownlint](https://github.com/DavidAnson/markdownlint) and [markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli) wrapper.
 
 ## Requirements
 
