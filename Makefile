@@ -15,6 +15,11 @@ lint_dockerfile: ## Lint dockerfile
 build: ## Build docker
 	docker build -t tmknom/markdownlint-cli .
 
+install: ## Install requirements
+	@type docker >/dev/null 2>&1 || (echo "ERROR: docker not found (brew install docker)"; exit 1)
+	docker pull hadolint/hadolint
+	docker pull tmknom/markdownlint-cli
+
 # https://postd.cc/auto-documented-makefile/
 help: ## Show help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
