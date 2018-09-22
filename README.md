@@ -34,6 +34,7 @@ docker run -i --rm tmknom/markdownlint-cli -h
 ```text
 build                          Build docker
 help                           Show help
+install                        Install requirements
 lint                           Lint dockerfile and markdown
 lint_dockerfile                Lint dockerfile
 lint_markdown                  Lint markdown
