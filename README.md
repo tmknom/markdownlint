@@ -29,6 +29,16 @@ docker run -i --rm tmknom/markdownlint-cli -s < <markdown_file>
 docker run -i --rm tmknom/markdownlint-cli -h
 ```
 
+## Makefile targets
+
+```text
+build                          Build docker
+help                           Show help
+lint                           Lint dockerfile and markdown
+lint_dockerfile                Lint dockerfile
+lint_markdown                  Lint markdown
+```
+
 ## License
 
 Apache 2 Licensed. See LICENSE for full details.
