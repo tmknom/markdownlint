@@ -6,9 +6,9 @@
 
 MD_PATH = "/path/to/markdown/dir"
 
-lint: ## lint markdown
+lint_markdown: ## lint markdown
 	$(eval DIR_NAME := $(shell echo $(shell cd ${MD_PATH} && pwd)))
-	docker run -i --rm -v $(DIR_NAME):/work tmknom/markdownlint-cli
+	docker run --rm -i -v $(DIR_NAME):/work tmknom/markdownlint-cli
 
 lint_dockerfile: ## lint dockerfile
 	docker run --rm -i hadolint/hadolint < Dockerfile
