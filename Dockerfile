@@ -16,7 +16,7 @@ LABEL org.label-schema.vendor="tmknom" \
       org.label-schema.docker.cmd="docker run --rm -i -v \$PWD:/work $REPO_NAME" \
       org.label-schema.schema-version="1.0"
 
-ARG NODEJS_VERSION=8.11.4-r0
+ARG NODEJS_VERSION=10.14.2-r0
 ARG MODULE_VERSION=0.13.0
 
 RUN set -x && \
