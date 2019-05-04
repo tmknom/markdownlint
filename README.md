@@ -1,8 +1,8 @@
 # markdownlint
 
 [![CircleCI](https://circleci.com/gh/tmknom/markdownlint.svg?style=svg)](https://circleci.com/gh/tmknom/markdownlint)
-[![Docker Build Status](https://img.shields.io/docker/build/tmknom/markdownlint.svg)](https://hub.docker.com/r/tmknom/markdownlint/builds/)
-[![Docker Automated build](https://img.shields.io/docker/automated/tmknom/markdownlint.svg)](https://hub.docker.com/r/tmknom/markdownlint/)
+[![Docker Build Status](https://img.shields.io/docker/cloud/build/tmknom/markdownlint.svg)](https://hub.docker.com/r/tmknom/markdownlint/builds/)
+[![Docker Automated build](https://img.shields.io/docker/cloud/automated/tmknom/markdownlint.svg)](https://hub.docker.com/r/tmknom/markdownlint/)
 [![MicroBadger Size](https://img.shields.io/microbadger/image-size/tmknom/markdownlint.svg)](https://microbadger.com/images/tmknom/markdownlint)
 [![MicroBadger Layers](https://img.shields.io/microbadger/layers/tmknom/markdownlint.svg)](https://microbadger.com/images/tmknom/markdownlint)
 [![License](https://img.shields.io/github/license/tmknom/markdownlint.svg)](https://opensource.org/licenses/Apache-2.0)
