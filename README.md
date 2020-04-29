@@ -1,6 +1,11 @@
 # markdownlint
 
-[![CircleCI](https://circleci.com/gh/tmknom/markdownlint.svg?style=svg)](https://circleci.com/gh/tmknom/markdownlint)
+[![Dockerfile Actions Status](https://github.com/tmknom/markdownlint/workflows/Dockerfile/badge.svg)](https://github.com/tmknom/markdownlint/actions?query=workflow%3ADockerfile)
+[![Shell Script Actions Status](https://github.com/tmknom/markdownlint/workflows/Shell%20Script/badge.svg)](https://github.com/tmknom/markdownlint/actions?query=workflow%3A%22Shell+Script%22)
+[![Markdown Actions Status](https://github.com/tmknom/markdownlint/workflows/Markdown/badge.svg)](https://github.com/tmknom/markdownlint/actions?query=workflow%3AMarkdown)
+[![YAML Actions Status](https://github.com/tmknom/markdownlint/workflows/YAML/badge.svg)](https://github.com/tmknom/markdownlint/actions?query=workflow%3AYAML)
+[![JSON Actions Status](https://github.com/tmknom/markdownlint/workflows/JSON/badge.svg)](https://github.com/tmknom/markdownlint/actions?query=workflow%3AJSON)
+
 [![Docker Build Status](https://img.shields.io/docker/cloud/build/tmknom/markdownlint.svg)](https://hub.docker.com/r/tmknom/markdownlint/builds/)
 [![Docker Automated build](https://img.shields.io/docker/cloud/automated/tmknom/markdownlint.svg)](https://hub.docker.com/r/tmknom/markdownlint/)
 [![MicroBadger Size](https://img.shields.io/microbadger/image-size/tmknom/markdownlint.svg)](https://microbadger.com/images/tmknom/markdownlint)
