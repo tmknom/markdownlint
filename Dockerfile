@@ -17,11 +17,11 @@ LABEL org.label-schema.vendor="tmknom" \
       org.label-schema.schema-version="1.0"
 
 ARG NODEJS_VERSION=10.14.2-r0
-ARG MODULE_VERSION=0.15.0
+ARG MARKDOWNLINT_VERSION
 
 RUN set -x && \
     apk add --no-cache nodejs=${NODEJS_VERSION} nodejs-npm=${NODEJS_VERSION} && \
-    npm install -g markdownlint-cli@${MODULE_VERSION} && \
+    npm install -g markdownlint-cli@${MARKDOWNLINT_VERSION} && \
     npm cache clean --force && \
     apk del nodejs-npm
 
